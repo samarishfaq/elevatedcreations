@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+.nav-links li a:hover {
+    color: rgba(5, 114, 32, 0.842);
+    font-weight: bold;
+}
+
+.contact-btn {
+    list-style: none;
+    text-decoration: none;
+    padding: 12px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 25px;
+}
+
+.contact-btn:hover {
+    background-color: rgba(5, 114, 32, 0.842);
+    color: black;
+    font-weight: bolder;
+}
+
+/* Hero Section  */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('images/hero-bg.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 5%;
+}
+
+.hero-content {
+    justify-items: center;
+}
+
+.hero-content h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgba(58, 255, 107, 0.74);
+}
+
+.hero-content p {
+    width: 50%;
+    margin: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.spec-text {
+    color: rgba(3, 138, 36, 0.932);
+}
+
+/* Home Section */
+.home {
+    /* height: 150vh; */
+    display: flex;
+    padding: 70px;
+    border:2px solid black;
+    background: rgba(0, 0, 0, 0.11);
+}
+
+.home-content h1 {
+    justify-self: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.home-content h4 {
+    justify-self: center;
+}
+
+.home-p1 {
+    justify-self: center;
+    margin: 50px;
+    font-size: large;
+}
+
+.home-content h2 {
+    color: rgba(0, 255, 0, 0.719);
+    margin: 20px;
+}
+
+.home-content ul li {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.home-p2 {
+    font-size: larger;
+}
+
+.home-content h3 {
+    margin: 20px;
+}
+
+.home-content h3 a {
+    text-decoration: none;
+    color: rgb(20, 18, 17);
+}
+
+.home-content h3 a:hover {
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+/* About Section */
+.about {
+    /* height: 150vh; */
+    padding: 80px;
+    justify-content: center;
+}
+
+.about h1 {
+    justify-self: center;
+    margin: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.about h3 {
+    margin: 30px;
+    font-size: medium;
+}
+
+.about h2 {
+    margin: 30px;
+    color: rgba(0, 255, 0, 0.719);
+}
+
+.li-1 {
+    font-weight: bold;
+}
+
+/* Services Section */
+.services {
+    padding: 5rem 5%;
+    background: rgba(38, 224, 38, 0.144);
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: rgba(0, 0, 0, 0.459);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 5%;
+    background: rgba(43, 42, 42, 0.87);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: rgba(9, 216, 9, 0.644);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(9, 77, 9, 0.945) ;
+}
+
+/* =============== Responsive Design =============== */
+@media (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 1rem 3%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: aliceblue;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .home {
+        padding: 50px 30px;
+        height: auto;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .service-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+        padding-top: 80px;
+    }
+
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .about {
+        padding: 50px 30px;
+        height: auto;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 35px;
+    }
+
+    .contact-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-card img {
+        height: 150px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    .home-content ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+}
